@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "../style/Mejer.css">
+    <link rel = "stylesheet" href = "../style/style.css">
+    <meta name="author" content="Jakub Szurek">
+</head>
+<body>
+    <p>Jednostki względne w CSS dostosowują się do rozmiaru innego elementu, co czyni je elastycznymi i przydatnymi w projektowaniu responsywnym. Do najpopularniejszych należą:</p>
+    <dl>
+        <dt>em</dt>
+            <dd>Względna jednostka miary, która bazuje na rozmiarze czcionki elementu nadrzędnego lub domyślnym rozmiarze czcionki przeglądarki, jeśli dla danego elementu nie określono inaczej. Używa się jej do skalowania różnych właściwości, takich jak marginesy, wypełnienia czy rozmiary czcionek, dzięki czemu układy strony stają się bardziej responsywne i dostępne</dd>
+        <dt>ex</dt>
+            <dd>Względna jednostka długości, która jest równa wysokości litery „x” w aktualnej czcionce. Jest ona często używana do skalowania elementów w sposób proporcjonalny do rozmiaru tekstu</dd>    
+        <dt>ch</dt>
+            <dd>Względna wednostka długości odpowiadająca szerokości znaku "0" w danej czcionce. Jest to jednostka względna, która pozwala na precyzyjne tworzenie układów opartych na szerokości znaków, co jest szczególnie użyteczne w kontekście responsywności i typografii.</dd>
+        <dt>fr</dt>
+            <dd>Miara reprezentująca ułamek dostępnej przestrzeni w kontenerze siatki, używana do tworzenia elastycznych układów. Pozwala ona dynamicznie określać rozmiary kolumn i wierszy tak, aby się skalowały wraz ze zmianą wielkości ekranu lub dostępnego miejsca, co ułatwia tworzenie responsywnych stron internetowych</dd>
+        <dt>rem</dt>
+            <dd>Jednostka miary (root em), która jest względna do rozmiaru czcionki elementu głównego (html). Domyślnie, w większości przeglądarek, 1rem odpowiada16px. Używanie rem pozwala na tworzenie skalowalnych i responsywnych projektów, ponieważ wszelkie elementy zdefiniowane w tej jednostce zmieniają swoje rozmiary proporcjonalnie do zmian ustawień czcionki użytkownika lub zmiany rozmiaru elementu <html></dd>
+        <dt>vw</dt>
+            <dd>Jednostka miary, która reprezentuje 1% szerokości okna przeglądarki. Jest to jednostka względna, co oznacza, że jej wartość jest zależna od aktualnego rozmiaru widocznego obszaru strony. Na przykład, 10vw oznacza długość równą 10% szerokości okna przeglądarki, a 100vw będzie odpowiadać całej jego szerokości</dd>
+        <dt>vh</dt>
+            <dd>Jednostka miary, która oznacza 1% wysokości widocznego obszaru przeglądarki (viewport). Jest to jednostka względna, co oznacza, że jej wartość dynamicznie dostosowuje się do rozmiaru ekranu, co jest przydatne w projektowaniu responsywnym. Na przykład, 100vh zajmuje całą wysokość okna przeglądarki, a 50vh połowę tej wysokości. </dd>
+        <dt>vmin</dt>
+            <dd>Jednostka względna równa 1% mniejszego wymiaru obszaru widoku (viewport), czyli mniejszej wartości między szerokością (vw) a wysokością (vh). Oznacza to, że gdy szerokość okna przeglądarki jest mniejsza od wysokości, to 1vmin będzie odpowiadać 1 tej szerokości, a gdy wysokość jest mniejsza, będzie to 1% tej wysokości. Używa się jej do tworzenia responsywnych układów, które skalują się proporcjonalnie do najmniejszego wymiaru ekranu</dd>
+        <dt>vmax</dt>
+            <dd>Jednostka relatywna, która jest równa 1% większego z dwóch wymiarów obszaru widoku przeglądarki (viewport). W praktyce oznacza to, że jej wartość jest dynamicznie dopasowywana do szerokości lub wysokości, w zależności od tego, która jest aktualnie większa. Jest to jednostka używana do tworzenia responsywnych układów, które skalują się proporcjonalnie do okna przeglądarki, a jej działanie można porównać do vw (1% szerokości) i vh (1% wysokości) - vmax zawsze bazuje na tym większym wymiarze. </dd>
+        <dt>%</dt>
+            <dd>procentowa wartość używana do określenia rozmiaru elementu, który jest względny względem innej wartości. Na przykład, padding-left: 10%; oznacza, że lewy odstęp będzie równy 10% szerokości jego rodzica, a width: 50% ustawi szerokość na połowę szerokości elementu nadrzędnego</dd>
+    </dl>
+</body></html>
