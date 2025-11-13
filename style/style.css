@@ -1,6 +1,54 @@
-p, dd{
+p.opis, dd{
     text-align: justify;
+    color: #0A0A0A;
 }
-*{
-    margin: 3px;
+dd{
+    margin-left: 1.5em;
+}
+
+a:link {
+    color: floralwhite;
+}
+
+a:visited {
+    color: lightgrey;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+div.button{
+    text-align: center;
+    margin: .5em .5em 4em .5em;
+    padding: 1.2em 0;
+    border: 3px solid lightgrey;
+    background-color: #161618;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+div.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+}
+div.wprowadzenie{
+    border: 1px solid lightgrey;
+    background-color: #787a7d;
+    border-radius: 5px;
+    margin: .5em .5em 1.3em .5em;
+    padding: .2em .5em;
+}
+div.opis{
+    border: 1px solid lightgrey;
+    background-color: #a8aaad;
+    border-radius: 5px;
+    margin: .5em .5em .5em 2em;
+    padding: .2em .7em;
+}
+body{
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2vmin;
 }
